@@ -11,6 +11,7 @@ public class Proyecto {
     private Participante dueño;
     private ArrayList<Actividad> listaactividades;
     private ArrayList<Participante> listaparticipantes;
+    private ArrayList<Paquete> listaplan;
     private LocalDateTime fechafin;
     private ArrayList<String> tipos;
 
@@ -23,6 +24,7 @@ public class Proyecto {
         dueño = tdueño;
         listaparticipantes = new ArrayList<Participante>();
         listaactividades = new ArrayList<Actividad>();
+        listaplan = new ArrayList<Paquete>();
         tipos = new ArrayList<String>();
     }
 
@@ -73,5 +75,17 @@ public class Proyecto {
             }
         }
         return res;
+    }
+
+    public ArrayList<Actividad> getActividades() {
+        return listaactividades;
+    }
+
+    public void agregarPacks(Paquete pack) {
+        listaplan.add(pack);
+    }
+
+    public ArrayList<Paquete> getRamas(){
+        return listaplan;
     }
 }

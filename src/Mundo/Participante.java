@@ -4,12 +4,10 @@ public class Participante {
 
     private String nombre;
     private String correo;
-    private String contrasena;
 
-    public Participante(String tnombre, String tcorreo, String tcontra) {
+    public Participante(String tnombre, String tcorreo) {
         nombre = tnombre;
         correo = tcorreo;
-        contrasena = tcontra;
 
     }
 
